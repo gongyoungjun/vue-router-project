@@ -1,0 +1,100 @@
+
+/* theHeader.vue push로   */
+<script setup>
+import {useRouter} from 'vue-router';
+
+const router = useRouter();
+
+const signup = () => {
+  router.push('/signup');
+};
+
+const login = () => {
+  router.push('/login');
+};
+
+const mypage = () => {
+  router.push('/mypage');
+};
+
+const notice = () => {
+  router.push('/notice');
+};
+
+const board = () => {
+  router.push('/board');
+};
+</script>
+
+
+  <div class="header-container">
+    <h3>
+      <div class="button-group">
+        <button @click="notice">공지사항</button>
+        <button @click="board">게시판</button>
+        <button @click="mypage">마이페이지</button>
+        <button @click="login">로그인</button>
+        <button @click="signup">회원가입</button>
+<!--        <router-link to="/board">게시판</router-link>-->
+      </div>
+
+    </h3>
+
+
+    @@@@@@@@ board @@@@@
+
+    <!--
+    <script>
+    export default {
+      data() {
+        return {
+          posts: [
+            { id: 1, title: '게시물 제목 1', content: '게시물 내용 1' },
+            { id: 2, title: '게시물 제목 2', content: '게시물 내용 2' },
+            { id: 3, title: '게시물 제목 3', content: '게시물 내용 3' },
+          ],
+        };
+      },
+    };
+    </script>
+
+    <template>
+      <div>
+        <h2>게시판</h2>
+        <ul class="post-list">
+          <li v-for="post in posts" :key="post.id" class="post-item">
+            <div class="post-header">
+              <h3>{{ post.title }}</h3>
+            </div>
+            <div class="post-content">
+              <p>{{ post.content }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </template>
+
+
+    <style scoped>
+    .post-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .post-item {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .post-header {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+
+    .post-content {
+      color: #555;
+    }
+    </style>
+    -->
