@@ -14,7 +14,6 @@ const posts = ref([
   { id: 9, title: '게시물 제목 9', content: '게시물 내용 9' },
   { id: 10, title: '게시물 제목 10', content: '게시물 내용 10' },
   { id: 11, title: '게시물 제목 11', content: '게시물 내용 11' },
-  // Add more posts as needed
 ]);
 
 const pageInfo = ref({

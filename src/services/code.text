@@ -1,0 +1,26 @@
+http://urbancode.myqnapcloud.com/
+
+import axios from 'axios';
+
+// Swagger에서 얻은 API 엔드포인트 및 토큰 정보
+const apiUrl = 'http://urbancode.myqnapcloud.com/';
+const apiKey = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDU2Njc2MTgsInN1YiI6IjEzIiwiZXhwIjoxNzM3MjAzNjE4fQ.6awfIxhMMlPSthygtLz38NNoozyVJNUDJrQVHPvEkyo';
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDU2Njc2MTgsInN1YiI6IjEzIiwiZXhwIjoxNzM3MjAzNjE4fQ.6awfIxhMMlPSthygtLz38NNoozyVJNUDJrQVHPvEkyo
+
+// API 요청 예시 (GET 요청)
+axios.get(`${apiUrl}/users`, {
+    headers: {
+        'Authorization': `Bearer ${apiKey}`,
+    },
+    params: {
+    },
+})
+    .then(response => {
+        // 성공적으로 응답을 받았을 때 수행할 작업
+        console.log(response.data);
+    })
+    .catch(error => {
+        // 에러 처리
+        console.error(error);
+    });

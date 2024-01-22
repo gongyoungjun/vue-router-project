@@ -1,9 +1,15 @@
 import {createRouter, createWebHistory} from 'vue-router';
 import Board from '@/views/board/Board.vue';
-import Signup from '@/views/SignUp.vue';
+import SignUp from '@/views/SignUp.vue';
+import VcList from '@/views/vctn/VcList.vue'
+import EmpList from '@/views/emp/EmpList.vue';
+import VcListDeatil from "@/views/vctn/VcListDeatil.vue";
+
+
 import TheHeader from '@/layouts/TheHeader.vue';
 
 import {ref} from 'vue'
+
 
 const routes = [
     {
@@ -13,9 +19,21 @@ const routes = [
     },
     {
         path: '/signup',
-        name: 'Signup',
-        component: Signup,
+        name: 'SignUp',
+        component: SignUp,
     },
+    {
+        path: '/vclist',
+        name: 'VcList',
+        component: VcList,
+    },
+    {
+        path: '/emplist',
+        name: 'EmpList',
+        component: EmpList,
+    },
+
+
 ];
 
 const router = createRouter({
